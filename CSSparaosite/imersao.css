@@ -30,7 +30,7 @@ header{
 .site-subtitle{
     transform: scale(2) translateY(80vh);
     opacity: 1;
-    animation: cubic-bezier(0, 0, 0, 0) 45s animacaoSubtitulo forwards;
+    animation: cubic-bezier(0, 0, 0, 0) 30s animacaoSubtitulo forwards;
 }
 
 @keyframes animacaoSubtitulo{
