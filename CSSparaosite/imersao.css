@@ -37,12 +37,8 @@ header{
     0%{
         transform: scale(3) translateY(40vh);
     }
-    50%{
+    40%{
         transform: scale(.3) translateY(-10vh);
-        opacity: 0;
-    }
-    70%{
-        transform: scale(0.1) translateY(-30vh);
         opacity: 0;
     }
     100%{
