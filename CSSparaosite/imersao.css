@@ -37,11 +37,11 @@ header{
     0%{
         transform: scale(3) translateY(40vh);
     }
-    60%{
+    50%{
         transform: scale(.3) translateY(-10vh);
         opacity: 0;
     }
-    80%{
+    70%{
         transform: scale(0.1) translateY(-30vh);
         opacity: 0;
     }
@@ -54,7 +54,7 @@ header{
 .site-title{
     transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: cubic-bezier(0, 0, 0, 0) 70s animacaoTitulo forwards;
+    animation: cubic-bezier(0, 0, 0, 0) 80s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo{
