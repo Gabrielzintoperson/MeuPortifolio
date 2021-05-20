@@ -58,7 +58,10 @@ header{
 }
 
 @keyframes animaçaoTitulo{
-
+    60%{
+        transform: scale(1) translateY(-20vh);
+    }
+    
     100%{
         transform: scale(1) translateY(-20vh);
     }
