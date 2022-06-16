@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /*inicio do reset do site*/
 *{
     margin: 0;
@@ -30,19 +34,15 @@ header{
 .site-subtitle{
     transform: scale(2) translateY(80vh);
     opacity: 1;
-    animation: ease 45s animaçaoSubtitulo forwards;
+    animation: ease 30s animacaoSubtitulo forwards;
 }
 
-@keyframes animaçaoSubtitulo{
+@keyframes animacaoSubtitulo{
     0%{
         transform: scale(3) translateY(40vh);
     }
-    60%{
-        transform: scale(.3) translateY(-10vh);
-        opacity: 0;
-    }
     80%{
-        transform: scale(0.1) translateY(-30vh);
+        transform: scale(0.1) translateY(-40vh);
         opacity: 0;
     }
     100%{
@@ -54,18 +54,20 @@ header{
 .site-title{
     transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: 90s ease animaçaoTitulo forwards;
+    animation: 70s ease 1s animacaoTitulo forwards;
 }
 
-@keyframes animaçaoTitulo{
-
+@keyframes animacaoTitulo{
+    50%{
+        transform: scale(1) translateY(10vh);
+    }
     100%{
-        transform: scale(1) translateY(-20vh);
+        transform: scale(1) translateY(10vh);
     }
 }
 
 .menu{
-    background-color: white;
+    background-color: black;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -85,18 +87,18 @@ header{
 .menu a{
     display: block;
     padding: 10px 20px;
-    border-radius: 0 0 25% 25%;
+    border-radius: 0 0 15% 15%;
     transition:background-color 1s, color 1s;
 }
 
 .menu a:active, .menu a:hover{
-    background-color: teal;
-    color:white;
+    background-color: yellow;
+    color:black;
 }
 
 a{
     text-decoration: none;
-    color: teal;
+    color: yellow;
 }
 
 .site-title, 
@@ -111,10 +113,14 @@ a{
     font-size: 3em;
 }
 
+.site-subtitle{
+    font-style: italic;
+}
+
 .img-portfolio{
     height: 180px;
     width: 100%;
-    box-shadow: 0 0 7px 1px whitesmoke;
+    box-shadow: 0 0 20px 10px whitesmoke;
     margin: auto;
     object-fit: cover;
     border-radius:5%;
@@ -163,22 +169,13 @@ a{
     border-radius: 3px;
 }
 
-.sobre{
-    display: grid;
-    grid-template-rows: 5%, 95%;
-    padding-right: 10em;
-    padding-left: 10em;
-}
-
 .sobre .img-sobre {
     clip-path: polygon(69% 0, 100% 31%, 100% 100%, 31% 100%, 0 69%, 0 0);
     float: right;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin-left: 2em;
 }
 
 .sobre p{
-    max-width: 400px;
     font-size: 1.5em;
     color:whitesmoke;
     margin: 0 40px;
@@ -198,7 +195,7 @@ a{
 @media (min-width: 700px) {
     .portfolio .grid{
         display:grid;
-        grid-template-columns:repeat(1,300px);
+        grid-template-columns:repeat(2,300px);
         justify-content: center;
     }
 }
@@ -206,7 +203,7 @@ a{
 @media (min-width: 1200px) {
     .portfolio .grid{
         display:grid;
-        grid-template-columns: repeat(3, 300px);
+        grid-template-columns: repeat(4, 300px);
         justify-content: center;
     }
 }
@@ -217,7 +214,6 @@ a{
 }
 
 .contato a{ 
-    margin: 0 30px;
     color:whitesmoke;
     font-size:4em;
     transition: text-shadow 800ms;
@@ -243,7 +239,7 @@ a{
 }
 
 .flip-card:hover .card{
-    transform: rotateY(180deg);
+    transform: rotateY(540deg) rotateX(720deg);
 
 }
 
@@ -258,12 +254,11 @@ a{
 .card-end{
     font-size: 2em;
     text-align: center;
-    background: url('../CSSparaosite/Fundo.png');
-    width: 100%;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0jhCTk4HoKQ-6p_cZyfmzcZ45TgzJUL2o21UhsAvLTFTgXLP4&usqp=CAU');
+    width:100%;
     height: 180px;
     border-radius:5%;
-    box-shadow: 0 0 7px 1px whitesmoke;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.06);
     transition: transform rotateY 3s;
     display:flex;
     align-items: center;
