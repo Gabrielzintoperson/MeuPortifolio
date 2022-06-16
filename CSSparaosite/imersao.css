@@ -30,15 +30,19 @@ header{
 .site-subtitle{
     transform: scale(2) translateY(80vh);
     opacity: 1;
-    animation: cubic-bezier(0, 0, 0, 0) 35s animacaoSubtitulo forwards;
+    animation: ease 45s animaçaoSubtitulo forwards;
 }
 
-@keyframes animacaoSubtitulo{
+@keyframes animaçaoSubtitulo{
     0%{
         transform: scale(3) translateY(40vh);
     }
-    40%{
+    60%{
         transform: scale(.3) translateY(-10vh);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(0.1) translateY(-30vh);
         opacity: 0;
     }
     100%{
@@ -50,13 +54,11 @@ header{
 .site-title{
     transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: cubic-bezier(0, 0, 0, 0) 50s animacaoTitulo forwards;
+    animation: 90s ease animaçaoTitulo forwards;
 }
 
-@keyframes animacaoTitulo{
-    50%{
-        transform: scale(1) translateY(-20vh);
-    }
+@keyframes animaçaoTitulo{
+
     100%{
         transform: scale(1) translateY(-20vh);
     }
@@ -83,6 +85,7 @@ header{
 .menu a{
     display: block;
     padding: 10px 20px;
+    border-radius: 0 0 25% 25%;
     transition:background-color 1s, color 1s;
 }
 
