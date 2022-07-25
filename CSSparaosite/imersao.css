@@ -17,6 +17,11 @@ body{
     font-size: 12px;
     font-family: 'Pangolin', cursive;
 }
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
 /*Se a tela tiver menos de 400px ela vai ficar de outra forma*/
 @media (min-width: 350px){
     body{
