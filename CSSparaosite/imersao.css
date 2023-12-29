@@ -42,12 +42,16 @@ header{
     animation: ease 30s animacaoSubtitulo forwards;
 }
 
-@keyframes animacaoSubtitulo{
+@keyframes animaçaoSubtitulo{
     0%{
         transform: scale(3) translateY(40vh);
     }
+    60%{
+        transform: scale(.3) translateY(-10vh);
+        opacity: 0;
+    }
     80%{
-        transform: scale(0.1) translateY(-40vh);
+        transform: scale(0.1) translateY(-30vh);
         opacity: 0;
     }
     100%{
@@ -59,15 +63,12 @@ header{
 .site-title{
     transform: scale(5) translateY(40vh);
     opacity: 100;
-    animation: 70s ease 1s animacaoTitulo forwards;
+    animation: 80s ease 1s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo{
-    50%{
-        transform: scale(1) translateY(10vh);
-    }
     100%{
-        transform: scale(1) translateY(10vh);
+        transform: scale(1) translateY(-20vh);
     }
 }
 
@@ -89,6 +90,11 @@ header{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
 .menu a{
     display: block;
     padding: 10px 20px;
@@ -101,25 +107,17 @@ header{
     color:black;
 }
 
-a{
-    text-decoration: none;
-    color: yellow;
-}
 
 .site-title, 
 .site-subtitle{
     text-align: center;
-    color: rgb(255, 153, 0);
+    color: yellow;
     font-family: 'Nova Mono', monospace;
     line-height: 1.8em;
 }
 
 .site-title{
     font-size: 3em;
-}
-
-.site-subtitle{
-    font-style: italic;
 }
 
 .img-portfolio{
@@ -259,7 +257,7 @@ a{
 .card-end{
     font-size: 2em;
     text-align: center;
-    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0jhCTk4HoKQ-6p_cZyfmzcZ45TgzJUL2o21UhsAvLTFTgXLP4&usqp=CAU');
+    background-image:url('../CSSparaosite/Fundo.png');
     width:100%;
     height: 180px;
     border-radius:5%;
