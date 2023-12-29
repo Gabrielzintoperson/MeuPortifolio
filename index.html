@@ -82,18 +82,19 @@
 		</div>
 		</div>
 	</section>
-	<script>
-		var texto = document.querySelector('#texto');
-		var fullAno = new Date();
-		var ano = fullAno.getFullYear();
-		var mes = fullAno.getMonth();
-		var idade = ano - 2006;
-		var idade2 = ano - 2007
-		
-		if (mes < 8){
-			texto.innerHTML = 'Olá, tenho ' + idade2 + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
-		}else{
-			texto.innerHTML = 'Olá, tenho ' + idade + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
-		}
+		<script>
+			var texto = document.querySelector('#texto');
+			var fullAno = new Date();
+			var ano = fullAno.getFullYear();
+			var mes = fullAno.getMonth();
+			var idade = ano - 2006;
+			var idade2 = ano - 2007
+			
+			if (mes < 8){
+				texto.innerHTML = 'Olá, tenho ' + idade2 + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
+			}else{
+				texto.innerHTML = 'Olá, tenho ' + idade + ' anos e amo programar descobri que a linguagem que vou querer<br> a profundar e ter como emprego é com certeza CSS 3 achei muito interressante <br>e quero continuar a praticar e mostrar às pessoas a minha habilidade.';
+			}
+		</script>
 	</body>
 </html>
